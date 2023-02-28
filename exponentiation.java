@@ -14,11 +14,14 @@ public class exponentiation {
     }
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Tabanı Giriniz: ");
-        int base = scan.nextInt();
-        System.out.print("Üssü Giriniz: ");
-        int power=scan.nextInt();
-        System.out.println(base+" üzeri "+power+" işleminin sonucu : "+exponentiation(base,power));
+        while (true) {
+            System.out.println();
+            Scanner scan = new Scanner(System.in);
+            System.out.print("Tabanı Giriniz: ");
+            int base = scan.nextInt();
+            System.out.print("Üssü Giriniz: ");
+            int power = scan.nextInt();
+            System.out.println(base + " üzeri " + power + " işleminin sonucu : " + exponentiation(base, power));
+        }
     }
 }
